@@ -1,0 +1,26 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  padding: 4rem 1.5rem;
+}
+
+main {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+h1 {
+  line-height: 1.2;
+}
+
+code {
+  background: #e2e8f0;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.25rem;
+}
