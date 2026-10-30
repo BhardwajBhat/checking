@@ -19,6 +19,76 @@ h1 {
   line-height: 1.2;
 }
 
+.game {
+  max-width: 22rem;
+}
+
+#game-status {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+button {
+  font: inherit;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.cell {
+  aspect-ratio: 1;
+  border: 2px solid #94a3b8;
+  border-radius: 0.75rem;
+  background: white;
+  font-size: clamp(2rem, 12vw, 4rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.cell[data-player="X"] {
+  color: #1d4ed8;
+}
+
+.cell[data-player="O"] {
+  color: #9d174d;
+}
+
+.cell[aria-disabled="true"] {
+  cursor: default;
+}
+
+.cell.winner {
+  background: #dcfce7;
+  border-color: #15803d;
+}
+
+.cell:not([aria-disabled="true"]):hover {
+  background: #e2e8f0;
+}
+
+button:focus-visible {
+  outline: 3px solid #1d4ed8;
+  outline-offset: 3px;
+}
+
+#restart {
+  margin-top: 1.25rem;
+  padding: 0.65rem 1.25rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: #1e293b;
+  color: white;
+}
+
+#restart:hover {
+  background: #334155;
+}
+
 code {
   background: #e2e8f0;
   padding: 0.15rem 0.35rem;
